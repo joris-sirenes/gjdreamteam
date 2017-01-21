@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Simply moves the current game object
-/// </summary>
-public class MoveScript : MonoBehaviour
-{
+public class BulletScript : MonoBehaviour {
+
     // 1 - Designer variables
 
     /// <summary>
     /// Object speed
     /// </summary>
-    public Vector2 speed = new Vector2(10, 10);
+    //public Vector2 speed = new Vector2(0.1f, 0);
 
     /// <summary>
     /// Moving direction
@@ -25,9 +22,10 @@ public class MoveScript : MonoBehaviour
     void Update()
     {
         // 2 - Movement
+
         movement = new Vector2(
-          speed.x * direction.x,
-          speed.y * direction.y);
+          direction.x * 2,
+          direction.y * 2);
     }
 
     void FixedUpdate()
@@ -38,4 +36,3 @@ public class MoveScript : MonoBehaviour
         rigidbodyComponent.velocity = movement;
     }
 }
-
