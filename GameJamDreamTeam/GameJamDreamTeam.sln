@@ -1,14 +1,18 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-
+Project("{ACB2B5B7-E9B8-965F-6EE5-E3943C2E9771}") = "GameJamDreamTeam", "Assembly-CSharp.csproj", "{91F4E329-8029-19E5-A400-9D56E1229C3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{91F4E329-8029-19E5-A400-9D56E1229C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F4E329-8029-19E5-A400-9D56E1229C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F4E329-8029-19E5-A400-9D56E1229C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F4E329-8029-19E5-A400-9D56E1229C3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
