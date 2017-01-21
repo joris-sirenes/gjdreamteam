@@ -58,4 +58,12 @@ public class EnemyMoveScript : MonoBehaviour {
 
         rigidbodyComponent.velocity = movement;
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag.Contains("Boule") || col.gameObject.tag.Contains("rouge") || col.gameObject.tag.Contains("bleu") || col.gameObject.tag.Contains("jaune") || col.gameObject.tag.Contains("orange") || col.gameObject.tag.Contains("vert"))
+        {
+                Destroy(this.gameObject);
+        }
+    }
 }

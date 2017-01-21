@@ -111,6 +111,10 @@ public class Player_Control : MonoBehaviour {
             }
             
         }
+        if (col.gameObject.tag.Equals("Enemy"))
+        {
+            Destroy(col.gameObject);
+        }
     }
 }
 

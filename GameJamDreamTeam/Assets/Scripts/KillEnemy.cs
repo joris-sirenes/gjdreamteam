@@ -16,6 +16,7 @@ public class KillEnemy : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag.Equals("Enemy"))
         {
+            Destroy(col.GetComponentInChildren<GameObject>());
             Destroy(col.gameObject);
         }
     }
