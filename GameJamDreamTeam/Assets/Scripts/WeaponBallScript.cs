@@ -5,28 +5,11 @@ using UnityEngine;
 /// <summary>
 /// Launch projectile
 /// </summary>
-public class WeaponScript : MonoBehaviour
+public class WeaponBallScript : MonoBehaviour
 {
     public string direction;
-
-    //--------------------------------
-    // 1 - Designer variables
-    //--------------------------------
-
-    /// <summary>
-    /// Projectile prefab for shooting
-    /// </summary>
     public Transform shotPrefab;
-
-    /// <summary>
-    /// Cooldown in seconds between two shots
-    /// </summary>
     public float shootingRate = 1f;
-
-    //--------------------------------
-    // 2 - Cooldown
-    //--------------------------------
-
     private float shootCooldown;
 
     void Start()
@@ -42,15 +25,7 @@ public class WeaponScript : MonoBehaviour
         }
     }
 
-    //--------------------------------
-    // 3 - Shooting from another script
-    //--------------------------------
-
-    /// <summary>
-    /// Create a new projectile if possible
-    /// </summary>
-
-    public void Attack(bool isEnemy)
+    public void Attack(bool isEnemy, Color color)
     {
         if (CanAttack)
         {
@@ -61,6 +36,11 @@ public class WeaponScript : MonoBehaviour
 
             // Assign position
             shotTransform.position = transform.position;
+            if(shotTransform.tag == "Boule")
+            {
+                shotTransform.tag = "Untagged";
+                shotTransform.GetComponent<SpriteRenderer>().color = color;
+            }
 
             // The is enemy property
             ShotScript shot = shotTransform.gameObject.GetComponent<ShotScript>();
