@@ -25,7 +25,7 @@ public class WeaponBallScript : MonoBehaviour
         }
     }
 
-    public void Attack(bool isEnemy, Color color)
+    public void Attack(bool isEnemy, Color color, string tag)
     {
         if (CanAttack)
         {
@@ -36,11 +36,10 @@ public class WeaponBallScript : MonoBehaviour
 
             // Assign position
             shotTransform.position = transform.position;
-            if(shotTransform.tag == "Boule")
-            {
-                shotTransform.tag = "Untagged";
-                shotTransform.GetComponent<SpriteRenderer>().color = color;
-            }
+
+            shotTransform.tag = tag.Substring(6, tag.Length - 6);
+            shotTransform.GetComponent<SpriteRenderer>().color = color;
+
 
             // The is enemy property
             ShotScript shot = shotTransform.gameObject.GetComponent<ShotScript>();

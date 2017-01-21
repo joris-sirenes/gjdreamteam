@@ -40,7 +40,6 @@ public class MoveScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        
         if (col.gameObject.tag.Equals("Wall"))
         {
             if (this.tag.Equals("Onde"))
@@ -48,7 +47,8 @@ public class MoveScript : MonoBehaviour
                 Destroy(this.gameObject);
             }else { 
                 this.direction = new Vector2(0, -1);
-                this.tag = "Boule";
+                if (!this.tag.Contains("Boule"))
+                    this.tag = "Boule_" + this.tag;
             }
         }
         if (col.gameObject.tag.Equals("Floor"))
@@ -60,7 +60,8 @@ public class MoveScript : MonoBehaviour
             else
             {
                 this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-                this.tag = "Boule";
+                if (!this.tag.Contains("Boule"))
+                    this.tag = "Boule_" + this.tag;
             }
         }
 

@@ -10,6 +10,7 @@ public class Player_Control : MonoBehaviour {
     public WeaponScript weapon_Basic = null;
     public WeaponBallScript weapon_Ball = null;
     public Transform shotPrefab;
+    public string currentTag;
 
     void Start () {
 
@@ -21,6 +22,7 @@ public class Player_Control : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        transform.rotation = Quaternion.Euler(0, 0, 0);
         Movement();
         Jump();
         Shoot();
@@ -71,7 +73,7 @@ public class Player_Control : MonoBehaviour {
                 else if (shoot_D)
                     weapon_Ball.direction = "DOWN";
 
-                weapon_Ball.Attack(false, this.gameObject.GetComponent<Light>().color);
+                weapon_Ball.Attack(false, this.gameObject.GetComponent<Light>().color, currentTag);
                 boulePickup = false;
                 this.gameObject.GetComponent<Light>().color = Color.white;
             }
@@ -98,11 +100,12 @@ public class Player_Control : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag.Equals("Boule"))
+        if (col.gameObject.tag.Contains("Boule"))
         {
             if (!boulePickup)
             {
                 this.gameObject.GetComponent<Light>().color=col.gameObject.GetComponent<SpriteRenderer>().color;
+                currentTag = col.gameObject.tag;
                 Destroy(col.gameObject);
                 boulePickup = true;
             }
