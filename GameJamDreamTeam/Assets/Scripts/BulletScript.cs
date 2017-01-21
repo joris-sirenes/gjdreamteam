@@ -35,4 +35,18 @@ public class BulletScript : MonoBehaviour {
         // Apply movement to the rigidbody
         rigidbodyComponent.velocity = movement;
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag.Equals("Wall"))
+        {
+            Destroy(this.gameObject);
+        }
+        if (col.gameObject.tag.Equals("Floor"))
+        {
+                Destroy(this.gameObject);
+        }
+
+
+    }
 }

@@ -22,7 +22,7 @@ public class BulletDamageScript : MonoBehaviour
         if (col.gameObject.tag.Equals("Player"))
         {
             Destroy(col.gameObject);
-            Instantiate(anim, transform.position, transform.rotation);
+            //Instantiate(anim, transform.position, transform.rotation);
             Destroy(this.gameObject);
 
         }
