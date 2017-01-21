@@ -21,7 +21,7 @@ public class WeaponScript : MonoBehaviour
     /// <summary>
     /// Cooldown in seconds between two shots
     /// </summary>
-    public float shootingRate = 0.25f;
+    public float shootingRate = 1f;
 
     //--------------------------------
     // 2 - Cooldown
@@ -74,24 +74,38 @@ public class WeaponScript : MonoBehaviour
             MoveScript move = shotTransform.gameObject.GetComponent<MoveScript>();
             if (move != null)
             {
-                if (direction.Equals("UP"))
+                switch (direction)
                 {
-                    move.direction = this.transform.up;
-                    shot.gameObject.transform.Rotate(new Vector3(0, 0, 45));
-                }
-                if (direction.Equals("RIGHT"))
-                {
-                    move.direction = this.transform.right;
-                    shot.gameObject.transform.Rotate(new Vector3(0, 0, -45));
-                }
-                if (direction.Equals("LEFT"))
-                {
-                    move.direction = - this.transform.right;
-                    shot.gameObject.transform.Rotate(new Vector3(0, 0, 135));
-                }
-                if (direction.Equals("DOWN"))
-                {
-                    move.direction = -this.transform.up;
+                    case "UP-RIGHT":
+                        this.transform.Rotate(new Vector3(0, 0, -45));
+                        move.direction = this.transform.up;
+                        transform.parent.transform.Translate(Vector2.left * 1f * Time.deltaTime);
+                        break;
+                    case "UP-LEFT":
+                        this.transform.Rotate(new Vector3(0, 0, 45));
+                        move.direction = this.transform.up;
+                        shot.gameObject.transform.Rotate(new Vector3(0, 0, 90));
+                        transform.parent.transform.Translate(Vector2.right * 1f * Time.deltaTime);
+                        break;
+                    case "UP":
+                        move.direction = this.transform.up;
+                        shot.gameObject.transform.Rotate(new Vector3(0, 0, 45));
+                        break;
+                    case "DOWN":
+                        move.direction = -this.transform.up;
+                        shot.gameObject.transform.Rotate(new Vector3(0, 0, -135));
+                        transform.parent.transform.Translate(Vector2.up * 40f * Time.deltaTime);
+                        break;
+                    case "RIGHT":
+                        move.direction = this.transform.right;
+                        shot.gameObject.transform.Rotate(new Vector3(0, 0, -45));
+                        transform.parent.transform.Translate(Vector2.left * 2f * Time.deltaTime);
+                        break;
+                    case "LEFT":
+                        move.direction = -this.transform.right;
+                        shot.gameObject.transform.Rotate(new Vector3(0, 0, 135));
+                        transform.parent.transform.Translate(Vector2.right * 2f * Time.deltaTime);
+                        break;
                 }
             }
         }

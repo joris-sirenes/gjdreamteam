@@ -27,3 +27,32 @@ D:\Documents\New Unity Project\Temp\bin\Debug\UnityEngine.VR.xml
 D:\Documents\New Unity Project\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 D:\Documents\New Unity Project\obj\Debug\Assembly-CSharp.dll
 D:\Documents\New Unity Project\obj\Debug\Assembly-CSharp.pdb
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\Assembly-CSharp.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEditor.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.Analytics.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.HoloLens.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.Networking.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.UI.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.VR.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\Mono.Cecil.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\Unity.SerializationLogic.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\Unity.DataContract.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\Unity.UNetWeaver.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\Unity.CecilTools.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.xml
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEditor.xml
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.UI.xml
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.Networking.xml
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.Analytics.xml
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.HoloLens.xml
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.VR.xml
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\obj\Debug\Assembly-CSharp.dll
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\obj\Debug\Assembly-CSharp.pdb
