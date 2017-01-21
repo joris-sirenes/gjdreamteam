@@ -46,11 +46,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Grid.cs" />
+     <Compile Include="Assets\Move.cs" />
+     <Compile Include="Assets\Planet Earth Free\SpinFree.cs" />
      <Compile Include="Assets\Scripts\MoveScript.cs" />
      <Compile Include="Assets\Scripts\Player_Control.cs" />
      <Compile Include="Assets\Scripts\ShotScript.cs" />
      <Compile Include="Assets\Scripts\WeaponBallScript.cs" />
      <Compile Include="Assets\Scripts\WeaponScript.cs" />
+     <Compile Include="Assets\Scripts\bluehole_attraction.cs" />
+     <Compile Include="Assets\Scripts\greenhole_attraction.cs" />
+     <Compile Include="Assets\Scripts\orangehole_attraction.cs" />
+     <Compile Include="Assets\Scripts\redhole_attraction.cs" />
+     <Compile Include="Assets\Scripts\yellowhole_attraction.cs" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
