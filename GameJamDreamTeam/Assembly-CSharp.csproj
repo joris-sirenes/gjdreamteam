@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Grid.cs" />
+     <Compile Include="Assets\Hole_Attraction.cs" />
      <Compile Include="Assets\Move.cs" />
      <Compile Include="Assets\Planet Earth Free\SpinFree.cs" />
      <Compile Include="Assets\Scripts\BulletDamageScript.cs" />
@@ -58,15 +59,14 @@
      <Compile Include="Assets\Scripts\Player_Control.cs" />
      <Compile Include="Assets\Scripts\ReflectShotScript.cs" />
      <Compile Include="Assets\Scripts\ShotScript.cs" />
+     <Compile Include="Assets\Scripts\VortexRotate.cs" />
      <Compile Include="Assets\Scripts\WaveReflectScript.cs" />
      <Compile Include="Assets\Scripts\WeaponBallScript.cs" />
      <Compile Include="Assets\Scripts\WeaponScript.cs" />
-     <Compile Include="Assets\Scripts\bluehole_attraction.cs" />
-     <Compile Include="Assets\Scripts\greenhole_attraction.cs" />
-     <Compile Include="Assets\Scripts\orangehole_attraction.cs" />
-     <Compile Include="Assets\Scripts\redhole_attraction.cs" />
-     <Compile Include="Assets\Scripts\yellowhole_attraction.cs" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -81,6 +81,9 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>

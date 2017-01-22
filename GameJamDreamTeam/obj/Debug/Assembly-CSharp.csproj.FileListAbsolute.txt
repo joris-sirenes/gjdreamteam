@@ -56,3 +56,4 @@ D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\UnityEngine.VR.
 D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\obj\Debug\Assembly-CSharp.dll
 D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\obj\Debug\Assembly-CSharp.pdb
+D:\Documents\gamejam\gjdreamteam\GameJamDreamTeam\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

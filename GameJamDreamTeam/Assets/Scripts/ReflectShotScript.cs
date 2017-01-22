@@ -33,19 +33,19 @@ public class ReflectShotScript : MonoBehaviour
         {
             right = false;
         }
+        
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        
-            if(col.gameObject.tag.Equals("Missile") && !proc)
+        print(right);
+        if (col.gameObject.tag.Equals("Missile") && !proc)
             {
-            print(true);
-                weapon.Attack(true, right);
-               // Destroy(this.gameObject);
-                Destroy(col.gameObject);
+
+            Destroy(col.gameObject);
             proc = true;
-            }
+            Destroy(this.gameObject);
+        }
         //test = 2;
 
         
