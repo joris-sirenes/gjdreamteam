@@ -49,6 +49,7 @@ public class WeaponScript : MonoBehaviour
     /// <summary>
     /// Create a new projectile if possible
     /// </summary>
+
     public void Attack(bool isEnemy)
     {
         if (CanAttack)
